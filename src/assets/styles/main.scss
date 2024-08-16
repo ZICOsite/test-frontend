@@ -1,0 +1,47 @@
+@import "common.scss";
+
+.form {
+    width: min(600px, 100%);
+    background: #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 30px auto;
+    display: grid;
+    gap: 16px;
+
+    &__email,
+    &__number {
+        display: grid;
+        gap: 12px;
+
+        span {
+            color: red;
+        }
+    }
+}
+
+.results {
+    display: grid;
+    gap: 12px;
+    background: #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    color: #000;
+
+    &__item {
+        background: #fff;
+        padding: 12px;
+        border-radius: inherit;
+    }
+}
+
+.error {
+    font-size: 18px;
+    background: #ccc;
+    padding: 12px;
+    border-radius: 8px;
+
+    &:empty {
+        display: none;
+    }
+}
